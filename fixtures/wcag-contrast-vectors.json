@@ -1,0 +1,14 @@
+{
+  "method": {
+    "name": "WCAG relative luminance and contrast ratio",
+    "formula": "relative luminance uses the sRGB linearization defined by WCAG; ratio = (Llighter + 0.05) / (Ldarker + 0.05)",
+    "source": "https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html",
+    "scope": "opaque sRGB only",
+    "thresholds": { "normal": 4.5, "large": 3 }
+  },
+  "vectors": [
+    { "id": "black-on-white", "foreground": "#000000", "background": "#ffffff", "ratio": 21, "expected": { "normal": "pass", "large": "pass" } },
+    { "id": "black-on-black", "foreground": "#000000", "background": "#000000", "ratio": 1, "expected": { "normal": "fail", "large": "fail" } },
+    { "id": "777-on-white", "foreground": "#777777", "background": "#ffffff", "ratio": 4.478089453577214, "expected": { "normal": "fail", "large": "pass" } }
+  ]
+}

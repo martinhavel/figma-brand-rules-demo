@@ -1,0 +1,10 @@
+{
+  "brand": "alpha",
+  "source": "fixtures/alpha/rules.json",
+  "rules": [
+    { "id": "alpha.contrast.aa", "reason": "Only reviewed opaque semantic text/background pairs are approved for alpha.", "source": "https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html", "allowedColorPairs": [{ "fg": "semantic.color.text", "bg": "semantic.color.background" }], "minimumRatio": { "normal": 4.5, "large": 3 } },
+    { "id": "alpha.typography.minimum-size", "reason": "Alpha normal text begins at the documented fixture size.", "source": "fixtures/alpha/figma-variables-local.json", "minimumFontSizePx": 16 },
+    { "id": "alpha.spacing.scale", "reason": "Alpha layouts use the documented primitive spacing steps.", "source": "fixtures/alpha/figma-variables-local.json", "allowedSpacingPx": [4, 8] },
+    { "id": "alpha.canary.unique", "reason": "Cross-brand isolation canary; this identifier and value belong only to alpha.", "source": "fixtures/alpha/rules.json", "canary": "alpha-orbit-71" }
+  ]
+}

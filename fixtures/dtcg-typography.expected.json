@@ -1,0 +1,25 @@
+{
+  "primitive": {
+      "typography": {
+        "fontFamily": { "$type": "fontFamily", "$value": "Inter" },
+        "fontSize": { "$type": "dimension", "$value": { "value": 16, "unit": "px" } },
+        "fontWeight": { "$type": "fontWeight", "$value": 400 },
+        "letterSpacing": { "$type": "dimension", "$value": { "value": 0, "unit": "px" } },
+        "lineHeight": { "$type": "number", "$value": 1.5 }
+      }
+  },
+  "semantic": {
+      "typography": {
+        "body": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{primitive.typography.fontFamily}",
+            "fontSize": "{primitive.typography.fontSize}",
+            "fontWeight": "{primitive.typography.fontWeight}",
+            "letterSpacing": "{primitive.typography.letterSpacing}",
+            "lineHeight": "{primitive.typography.lineHeight}"
+          }
+        }
+      }
+  }
+}

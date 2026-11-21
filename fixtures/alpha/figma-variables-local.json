@@ -1,0 +1,52 @@
+{
+  "status": 200,
+  "error": false,
+  "meta": {
+    "variableCollections": {
+      "VariableCollectionId:alpha": {
+        "id": "VariableCollectionId:alpha",
+        "name": "alpha-primitives",
+        "key": "alpha-primitives-collection",
+        "modes": [
+          { "modeId": "alpha-light", "name": "light" },
+          { "modeId": "alpha-dark", "name": "dark" }
+        ],
+        "defaultModeId": "alpha-light",
+        "remote": false,
+        "hiddenFromPublishing": false,
+        "variableIds": ["alpha-bg", "alpha-fg", "alpha-space-4", "alpha-space-8", "alpha-radius-4", "alpha-font-family", "alpha-font-size", "alpha-font-weight", "alpha-letter-spacing", "alpha-line-height"],
+        "isExtension": false,
+        "deletedButReferenced": false
+      },
+      "VariableCollectionId:alpha-semantic": {
+        "id": "VariableCollectionId:alpha-semantic",
+        "name": "alpha-semantic",
+        "key": "alpha-semantic-collection",
+        "modes": [
+          { "modeId": "alpha-semantic-light", "name": "light" },
+          { "modeId": "alpha-semantic-dark", "name": "dark" }
+        ],
+        "defaultModeId": "alpha-semantic-light",
+        "remote": false,
+        "hiddenFromPublishing": false,
+        "variableIds": ["alpha-semantic-bg", "alpha-semantic-text"],
+        "isExtension": false,
+        "deletedButReferenced": false
+      }
+    },
+    "variables": {
+      "alpha-bg": { "id": "alpha-bg", "name": "primitive/color/background", "key": "alpha-bg-key", "variableCollectionId": "VariableCollectionId:alpha", "resolvedType": "COLOR", "valuesByMode": { "alpha-light": { "r": 1, "g": 1, "b": 1, "a": 1 }, "alpha-dark": { "r": 0.0470588235, "g": 0.0705882353, "b": 0.1176470588, "a": 1 } }, "remote": false, "description": "Alpha opaque background", "hiddenFromPublishing": false, "scopes": ["ALL_FILLS"], "codeSyntax": { "WEB": "--alpha-color-background" } },
+      "alpha-fg": { "id": "alpha-fg", "name": "primitive/color/foreground", "key": "alpha-fg-key", "variableCollectionId": "VariableCollectionId:alpha", "resolvedType": "COLOR", "valuesByMode": { "alpha-light": { "r": 0, "g": 0, "b": 0, "a": 1 }, "alpha-dark": { "r": 1, "g": 1, "b": 1, "a": 1 } }, "remote": false, "description": "Alpha opaque foreground", "hiddenFromPublishing": false, "scopes": ["TEXT_FILL"], "codeSyntax": { "WEB": "--alpha-color-foreground" } },
+      "alpha-space-4": { "id": "alpha-space-4", "name": "primitive/spacing/4", "key": "alpha-space-4-key", "variableCollectionId": "VariableCollectionId:alpha", "resolvedType": "FLOAT", "valuesByMode": { "alpha-light": 4, "alpha-dark": 4 }, "remote": false, "description": "Alpha 4px spacing", "hiddenFromPublishing": false, "scopes": ["GAP"], "codeSyntax": { "WEB": "--alpha-space-4" } },
+      "alpha-space-8": { "id": "alpha-space-8", "name": "primitive/spacing/8", "key": "alpha-space-8-key", "variableCollectionId": "VariableCollectionId:alpha", "resolvedType": "FLOAT", "valuesByMode": { "alpha-light": 8, "alpha-dark": 8 }, "remote": false, "description": "Alpha 8px spacing", "hiddenFromPublishing": false, "scopes": ["GAP"], "codeSyntax": { "WEB": "--alpha-space-8" } },
+      "alpha-radius-4": { "id": "alpha-radius-4", "name": "primitive/radius/4", "key": "alpha-radius-4-key", "variableCollectionId": "VariableCollectionId:alpha", "resolvedType": "FLOAT", "valuesByMode": { "alpha-light": 4, "alpha-dark": 4 }, "remote": false, "description": "Alpha 4px radius", "hiddenFromPublishing": false, "scopes": ["CORNER_RADIUS"], "codeSyntax": { "WEB": "--alpha-radius-4" } },
+      "alpha-font-family": { "id": "alpha-font-family", "name": "primitive/typography/fontFamily", "key": "alpha-font-family-key", "variableCollectionId": "VariableCollectionId:alpha", "resolvedType": "STRING", "valuesByMode": { "alpha-light": "Inter", "alpha-dark": "Inter" }, "remote": false, "description": "Alpha font family", "hiddenFromPublishing": false, "scopes": ["FONT_FAMILY"], "codeSyntax": { "WEB": "--alpha-font-family" } },
+      "alpha-font-size": { "id": "alpha-font-size", "name": "primitive/typography/fontSize", "key": "alpha-font-size-key", "variableCollectionId": "VariableCollectionId:alpha", "resolvedType": "FLOAT", "valuesByMode": { "alpha-light": 16, "alpha-dark": 16 }, "remote": false, "description": "Alpha normal text size", "hiddenFromPublishing": false, "scopes": ["FONT_SIZE"], "codeSyntax": { "WEB": "--alpha-font-size" } },
+      "alpha-font-weight": { "id": "alpha-font-weight", "name": "primitive/typography/fontWeight", "key": "alpha-font-weight-key", "variableCollectionId": "VariableCollectionId:alpha", "resolvedType": "FLOAT", "valuesByMode": { "alpha-light": 400, "alpha-dark": 400 }, "remote": false, "description": "Alpha normal text weight", "hiddenFromPublishing": false, "scopes": ["FONT_WEIGHT"], "codeSyntax": { "WEB": "--alpha-font-weight" } },
+      "alpha-letter-spacing": { "id": "alpha-letter-spacing", "name": "primitive/typography/letterSpacing", "key": "alpha-letter-spacing-key", "variableCollectionId": "VariableCollectionId:alpha", "resolvedType": "FLOAT", "valuesByMode": { "alpha-light": 0, "alpha-dark": 0 }, "remote": false, "description": "Alpha letter spacing", "hiddenFromPublishing": false, "scopes": ["LETTER_SPACING"], "codeSyntax": { "WEB": "--alpha-letter-spacing" } },
+      "alpha-line-height": { "id": "alpha-line-height", "name": "primitive/typography/lineHeight", "key": "alpha-line-height-key", "variableCollectionId": "VariableCollectionId:alpha", "resolvedType": "FLOAT", "valuesByMode": { "alpha-light": 1.5, "alpha-dark": 1.5 }, "remote": false, "description": "Alpha line-height multiplier", "hiddenFromPublishing": false, "scopes": ["LINE_HEIGHT"], "codeSyntax": { "WEB": "--alpha-line-height" } },
+      "alpha-semantic-bg": { "id": "alpha-semantic-bg", "name": "semantic/color/background", "key": "alpha-semantic-bg-key", "variableCollectionId": "VariableCollectionId:alpha-semantic", "resolvedType": "COLOR", "valuesByMode": { "alpha-semantic-light": { "type": "VARIABLE_ALIAS", "id": "alpha-bg" }, "alpha-semantic-dark": { "type": "VARIABLE_ALIAS", "id": "alpha-bg" } }, "remote": false, "description": "Semantic background alias", "hiddenFromPublishing": false, "scopes": ["ALL_FILLS"], "codeSyntax": { "WEB": "--alpha-semantic-background" } },
+      "alpha-semantic-text": { "id": "alpha-semantic-text", "name": "semantic/color/text", "key": "alpha-semantic-text-key", "variableCollectionId": "VariableCollectionId:alpha-semantic", "resolvedType": "COLOR", "valuesByMode": { "alpha-semantic-light": { "type": "VARIABLE_ALIAS", "id": "alpha-fg" }, "alpha-semantic-dark": { "type": "VARIABLE_ALIAS", "id": "alpha-fg" } }, "remote": false, "description": "Semantic text alias", "hiddenFromPublishing": false, "scopes": ["TEXT_FILL"], "codeSyntax": { "WEB": "--alpha-semantic-text" } }
+    }
+  }
+}
